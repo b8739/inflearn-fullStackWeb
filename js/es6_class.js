@@ -20,7 +20,10 @@ class Brand extends Person {
     super(name);
     this.brand = brand;
   }
+  get_message() {
+    return "bye";
+  }
 }
 const coco_chanel = new Brand("coco", "coco_chanel");
 
-console.log(coco_chanel.brand);
+console.log(coco_chanel.get_message());
