@@ -18,5 +18,6 @@ let [first, second, third, fourth] = myArray;
 console.log(first, second, third, fourth);
 // ... 문법
 let myArray2 = [1, 2, 3, 4, 5];
+// let [initial, ...rest,rest2] = myArray2는 안됨, ...뒤는 하나만 가능
 let [initial, ...rest] = myArray2;
 console.log(rest);
