@@ -11,7 +11,17 @@ function User(age, name) {
 }
 
 const ron = new User(10, "Ron");
-console.log(typeof ron);
-console.log(ron.age, ron.name);
-//메소드를 프로퍼리처럼 접근하는 객체 리터럴 방식과 달리, 이 방식에서는 함수처럼 접근
-console.log(ron.get_age());
+
+// console.log(typeof ron);
+// console.log(ron.age, ron.name);
+// //메소드를 프로퍼리처럼 접근하는 객체 리터럴 방식과 달리, 이 방식에서는 함수처럼 접근
+// console.log(ron.get_age());
+
+User.prototype.message = function () {
+  return "Hello";
+};
+
+User.prototype.hobby = "coding";
+
+const james = new User(10, "James", "league of legend");
+console.log(james);
